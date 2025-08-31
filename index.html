@@ -1,38 +1,577 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bem-Vindo Chácara Sousa</title>
+    <title>Chácara Sousa - Sua Chácara para Lazer e Eventos</title>
+    <meta name="description" content="Chácara Sousa é o lugar perfeito para lazer, eventos e contato com a natureza. Reserve sua data e venha desfrutar!">
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imagens/logo-chacara.png" type="image/x-icon">
 </head>
 <body>
-    <header>
-            <h1>Chácara Sousa</h1>
-            <p>Seu refúgio de tranquilidade e lazer</p>
-
-     <img src="imagens/logo.png" alt="Logo da Chácara Sousa" class="logo">
-
-        <nav>
-            <ul class="nav-links">
-
-                <a href="#home">Home</a>
-                <a href="#sobre">Sobre Nós</a>
-                <a href="#servicos">Serviços</a>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="#" class="logo">Chácara Sousa</a>
+            <nav class="menu-navegacao" aria-label="Navegação Principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#comodidades">Comodidades</a>
+                <a href="#precos">Preços</a>
+                <a href="#localizacao">Localização</a>
                 <a href="#contato">Contato</a>
-
-            </ul>
-        </nav>
-
+                <button type="button" class="botao-primario botao-reservar" aria-label="Reservar a Chácara">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    Reservar
+                </button>
+            </nav>
+            <button class="botao-menu-hamburguer" aria-label="Abrir menu de navegação">☰</button>
+        </div>
     </header>
-     
 
+    <main>
+        <section id="hero" class="secao-hero">
+            <div class="container">
+                <h1>Chácara Sousa</h1>
+                <p>O seu refúgio de tranquilidade e natureza para eventos, lazer e momentos inesquecíveis. Perfeito para festas de aniversário, churrascos em família ou um simples fim de semana de relaxamento.</p>
+                <button type="button" class="botao-primario botao-reservar" aria-label="Reservar a Chácara agora">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    Reservar a Chácara
+                </button>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao-sobre">
+            <div class="container">
+                <h2 class="secao-titulo">Sobre a Chácara Sousa</h2>
+                <p>Bem-vindo à Chácara Sousa, um oásis de paz e beleza natural. Nosso espaço foi projetado para ser o cenário perfeito para seus melhores momentos, seja um evento especial ou um simples final de semana de descanso com a família. Rodeada por uma vasta área verde, a chácara oferece a combinação ideal de conforto e contato com a natureza.</p>
+                <p>Nossa missão é proporcionar uma experiência memorável, garantindo que cada detalhe contribua para a sua felicidade e bem-estar. Estamos prontos para recebê-lo e ajudá-lo a criar lembranças que durarão a vida toda.</p>
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <h2 class="secao-titulo">Nossa Galeria</h2>
+                <div class="grade-imagens">
+                    <img src="imagens/imagem-da-frente.jpg" alt="Imagem 1 da chácara, piscina">
+                    <img src="imagens/imagem-da-frente01.jpg" alt="Imagem 2 da chácara, área de churrasco">
+                    <img src="imagens/imagem-da-frente02.jpg" alt="Imagem 3 da chácara, salão de festas">
+                    <img src="imagens/imagem-da-piscina.jpg" alt="Imagem 4 da chácara, jardim">
+                    <img src="imagens/imagem-do-parquinho.jpg" alt="Imagem 5 da chácara, área de lazer">
+                    <img src="imagens/imagem-do-balanco.jpg" alt="Imagem 6 da chácara, campo de futebol">
+                </div>
+            </div>
+        </section>
+
+        <section id="comodidades" class="comodidades">
+            <div class="container">
+                <h2 class="secao-titulo">O que temos?</h2>
+                <div class="grade-comodidades">
+                    <div class="cartao-comodidade">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2zM4 17h16V7H4zm1-8h2v2H5zm4 0h2v2H9zm4 0h2v2h-2zm-8 4h14v2H5z"></path></svg>
+                        <h3>Piscina</h3>
+                        <p>Uma piscina refrescante para todos os seus convidados.</p>
+                    </div>
+                    <div class="cartao-comodidade">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-9.22 6.13l.87 1.25c.34-.33.7-.65 1.09-.94l.95-.74a10 10 0 0 0 14.68-1.55l-1.09-.75a8 8 0 0 1-12.75 3.52l-.95.74a8 8 0 0 1-1.07 1.55l.87 1.25a6 6 0 0 1-1.39-2.19l.7-.93a4 4 0 0 0-.25-2.07l.87-1.25a2 2 0 0 0-.8-2.67l-1.22.84a12 12 0 0 1 21.6 3.16l-1.46.72a10 10 0 0 0-14.7-5.91zm0 18a8 8 0 0 1-7.23-4.22l.87-1.25a6 6 0 0 0 10.9-2.45l.95-.74a4 4 0 0 1-6.19 1.55l-1.09-.75a2 2 0 0 0-3.15 1.2l-.7-.93a10 10 0 0 1 18.06-3.8l-1.46.72a8 8 0 0 0-14.54 6.78z"></path></svg>
+                        <h3>Área Gourmet</h3>
+                        <p>Cozinha completa com churrasqueira e forno a lenha.</p>
+                    </div>
+                    <div class="cartao-comodidade">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-9.22 6.13l.87 1.25c.34-.33.7-.65 1.09-.94l.95-.74a10 10 0 0 0 14.68-1.55l-1.09-.75a8 8 0 0 1-12.75 3.52l-.95.74a8 8 0 0 1-1.07 1.55l.87 1.25a6 6 0 0 1-1.39-2.19l.7-.93a4 4 0 0 0-.25-2.07l.87-1.25a2 2 0 0 0-.8-2.67l-1.22.84a12 12 0 0 1 21.6 3.16l-1.46.72a10 10 0 0 0-14.7-5.91zm0 18a8 8 0 0 1-7.23-4.22l.87-1.25a6 6 0 0 0 10.9-2.45l.95-.74a4 4 0 0 1-6.19 1.55l-1.09-.75a2 2 0 0 0-3.15 1.2l-.7-.93a10 10 0 0 1 18.06-3.8l-1.46.72a8 8 0 0 0-14.54 6.78z"></path></svg>
+                        <h3>Campo de Futebol</h3>
+                        <p>Campo gramado para partidas de futebol ou outras brincadeiras.</p>
+                    </div>
+                    <div class="cartao-comodidade">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-9.22 6.13l.87 1.25c.34-.33.7-.65 1.09-.94l.95-.74a10 10 0 0 0 14.68-1.55l-1.09-.75a8 8 0 0 1-12.75 3.52l-.95.74a8 8 0 0 1-1.07 1.55l.87 1.25a6 6 0 0 1-1.39-2.19l.7-.93a4 4 0 0 0-.25-2.07l.87-1.25a2 2 0 0 0-.8-2.67l-1.22.84a12 12 0 0 1 21.6 3.16l-1.46.72a10 10 0 0 0-14.7-5.91zm0 18a8 8 0 0 1-7.23-4.22l.87-1.25a6 6 0 0 0 10.9-2.45l.95-.74a4 4 0 0 1-6.19 1.55l-1.09-.75a2 2 0 0 0-3.15 1.2l-.7-.93a10 10 0 0 1 18.06-3.8l-1.46.72a8 8 0 0 0-14.54 6.78z"></path></svg>
+                        <h3>Estacionamento</h3>
+                        <p>Amplo espaço para estacionar seus veículos com segurança.</p>
+                    </div>
+                    <div class="cartao-comodidade">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-9.22 6.13l.87 1.25c.34-.33.7-.65 1.09-.94l.95-.74a10 10 0 0 0 14.68-1.55l-1.09-.75a8 8 0 0 1-12.75 3.52l-.95.74a8 8 0 0 1-1.07 1.55l.87 1.25a6 6 0 0 1-1.39-2.19l.7-.93a4 4 0 0 0-.25-2.07l.87-1.25a2 2 0 0 0-.8-2.67l-1.22.84a12 12 0 0 1 21.6 3.16l-1.46.72a10 10 0 0 0-14.7-5.91zm0 18a8 8 0 0 1-7.23-4.22l.87-1.25a6 6 0 0 0 10.9-2.45l.95-.74a4 4 0 0 1-6.19 1.55l-1.09-.75a2 2 0 0 0-3.15 1.2l-.7-.93a10 10 0 0 1 18.06-3.8l-1.46.72a8 8 0 0 0-14.54 6.78z"></path></svg>
+                        <h3>Salão de Festas</h3>
+                        <p>Espaço coberto e amplo para festas e eventos, com sanitários.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="precos" class="precos">
+            <div class="container">
+                <h2 class="secao-titulo">Preços e Diárias</h2>
+                <p>Nossos valores são flexíveis para atender a sua necessidade. Entre em contato para orçamentos personalizados e pacotes de longa duração.</p>
+                <table class="tabela-precos">
+                    <thead>
+                        <tr>
+                            <th>Pacote</th>
+                            <th>Descrição</th>
+                            <th>Valor (a partir de)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diária Fim de Semana</td>
+                            <td>Sábado e/ou Domingo. Ideal para festas e eventos.</td>
+                            <td>R$ 800,00</td>
+                        </tr>
+                        <tr>
+                            <td>Diária Dia de Semana</td>
+                            <td>Aluguel para um dia durante a semana. Perfeito para eventos menores.</td>
+                            <td>R$ 550,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="localizacao" class="localizacao">
+            <div class="container localizacao-conteudo">
+                <h2 class="secao-titulo">Onde Estamos</h2>
+                <p>Localizada em uma área de fácil acesso, a Chácara Sousa oferece a tranquilidade do campo sem a distância da cidade. Venha nos visitar!</p>
+                <iframe 
+                    class="mapa-embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.292552655383!2d-43.1772421!3d-22.9068467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f59d4c2b9a7%3A0x6d11f7c5e219e27c!2sPraia%20de%20Copacabana!5e0!3m2!1spt-BR!2sbr!4v1692292026848!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    aria-label="Mapa com a localização da Chácara Sousa">
+                </iframe>
+            </div>
+        </section>
+        
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2 class="secao-titulo">Entre em Contato</h2>
+                <p>Use o formulário abaixo para enviar uma mensagem ou utilize o botão de reserva para um atendimento mais rápido via chatbot!</p>
+                <form action="#" method="post">
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required aria-required="true">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="botao-primario">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#precos">Preços</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <p>&copy; 2024 Chácara Sousa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="janela-chatbot" role="dialog" aria-modal="true" aria-labelledby="cabecalho-chatbot">
+        <div class="conteudo-chatbot">
+            <div class="cabecalho-chatbot" id="cabecalho-chatbot">
+                <span>Reserva Chácara Sousa</span>
+                <button class="botao-fechar" aria-label="Fechar janela de reserva">&times;</button>
+            </div>
+            <div class="mensagens-chatbot">
+                </div>
+            <div class="secao-entrada">
+                </div>
+        </div>
+    </div>
+    
+    <div class="toast-container"></div>
+    
+    <script>
+        //
+        // ========================================
+        // LÓGICA DO JAVASCRIPT
+        // ========================================
+        //
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // ========================================
+            // VARIÁVEIS E CONSTANTES GLOBAIS
+            // ========================================
+            const botoesReservar = document.querySelectorAll('.botao-reservar');
+            const janelaChatbot = document.querySelector('.janela-chatbot');
+            const botaoFecharChatbot = document.querySelector('.botao-fechar');
+            const mensagensChatbot = document.querySelector('.mensagens-chatbot');
+            const secaoEntrada = document.querySelector('.secao-entrada');
+            const toastContainer = document.querySelector('.toast-container');
+            const menuHamburguer = document.querySelector('.botao-menu-hamburguer');
+            const menuNavegacao = document.querySelector('.menu-navegacao');
+
+            // Array de datas já reservadas para simulação. Formato YYYY-MM-DD.
+            // Para adicionar/remover datas, basta editar este array.
+            const datasIndisponiveis = [
+                '2025-09-05',
+                '2025-09-12',
+                '2025-10-01',
+                '2025-12-25' // Exemplo de data de feriado
+            ];
+
+            // Variáveis de estado do chatbot
+            let estadoChatbot = 'data';
+            let dadosReserva = {};
+            let timeoutDigitar;
+
+            // ========================================
+            // FUNÇÕES DE UTILIDADE
+            // ========================================
+
+            // Adiciona uma mensagem na interface do chatbot
+            function adicionarMensagem(texto, remetente, tempoDigitar = 500) {
+                const balaoWrapper = document.createElement('div');
+                balaoWrapper.classList.add('mensagem-balao', remetente);
+
+                const balao = document.createElement('div');
+                balao.classList.add('balao', remetente);
+                balao.textContent = texto;
+
+                balaoWrapper.appendChild(balao);
+                mensagensChatbot.appendChild(balaoWrapper);
+
+                // Rolagem automática para o final
+                mensagensChatbot.scrollTop = mensagensChatbot.scrollHeight;
+            }
+
+            // Exibe o "digitando..." do chatbot
+            function simularDigitando() {
+                const balaoWrapper = document.createElement('div');
+                balaoWrapper.classList.add('mensagem-balao', 'atendente', 'digitando');
+
+                const balao = document.createElement('div');
+                balao.classList.add('balao', 'atendente');
+                balao.textContent = '...';
+
+                balaoWrapper.appendChild(balao);
+                mensagensChatbot.appendChild(balaoWrapper);
+                mensagensChatbot.scrollTop = mensagensChatbot.scrollHeight;
+
+                return balaoWrapper;
+            }
+
+            // Mostra uma mensagem temporária (toast)
+            function mostrarToast(mensagem, tipo = 'aviso') {
+                const toast = document.createElement('div');
+                toast.classList.add('toast');
+                if (tipo === 'sucesso') {
+                    toast.classList.add('toast-sucesso');
+                }
+                toast.textContent = mensagem;
+
+                toastContainer.appendChild(toast);
+                setTimeout(() => {
+                    toast.classList.add('mostrar');
+                }, 10);
+
+                setTimeout(() => {
+                    toast.classList.remove('mostrar');
+                    toast.addEventListener('transitionend', () => {
+                        toast.remove();
+                    });
+                }, 4000);
+            }
+
+            // Formata uma data para o formato brasileiro DD/MM/AAAA
+            function formatarDataBR(data) {
+                const [ano, mes, dia] = data.split('-');
+                return `${dia}/${mes}/${ano}`;
+            }
+
+            // Encontra a próxima data disponível após uma data inicial
+            function encontrarProximaDataDisponivel(dataInicial) {
+                let data = new Date(dataInicial);
+                while (true) {
+                    data.setDate(data.getDate() + 1);
+                    const dataFormatada = data.toISOString().split('T')[0];
+                    if (!datasIndisponiveis.includes(dataFormatada)) {
+                        // Comentário: A linha abaixo evita fins de semana. Para aceitar, basta remover a verificação.
+                        // if (data.getDay() !== 0 && data.getDay() !== 6) { // 0 = Domingo, 6 = Sábado
+                            return dataFormatada;
+                        // }
+                    }
+                }
+            }
+
+            // ========================================
+            // LÓGICA PRINCIPAL DO CHATBOT
+            // ========================================
             
+            // Inicia o fluxo do chatbot
+            function iniciarChatbot() {
+                mensagensChatbot.innerHTML = ''; // Limpa as mensagens
+                secaoEntrada.innerHTML = ''; // Limpa os inputs/botões
+                estadoChatbot = 'data';
+                dadosReserva = {};
+                
+                // Mensagem inicial do chatbot
+                adicionarMensagem('Olá! Vamos agendar sua visita na Chácara Sousa. Por favor, informe a data desejada.', 'atendente');
+                
+                // Exibe o input de data
+                setTimeout(() => {
+                    const inputData = document.createElement('input');
+                    inputData.type = 'date';
+                    inputData.classList.add('campo-data');
+                    inputData.min = new Date().toISOString().split('T')[0];
+                    
+                    const mensagemEstado = document.createElement('p');
+                    mensagemEstado.classList.add('mensagem-estado');
+                    mensagemEstado.textContent = 'Aguardando sua escolha...';
+                    
+                    secaoEntrada.appendChild(inputData);
+                    secaoEntrada.appendChild(mensagemEstado);
+                    
+                    inputData.focus();
 
-    <a href="#reservas" class="btn-reservas">Reserve aqui</a>
-<footer> 
+                    // Evento para validar a data ao ser escolhida
+                    inputData.addEventListener('change', (evento) => {
+                        const dataEscolhida = evento.target.value;
+                        if (dataEscolhida) {
+                            validarData(dataEscolhida);
+                        }
+                    });
 
-</footer>
+                }, 1000);
+            }
 
+            // Validação da data escolhida
+            function validarData(dataEscolhida) {
+                clearTimeout(timeoutDigitar);
+                
+                const mensagemEstado = secaoEntrada.querySelector('.mensagem-estado');
+                mensagemEstado.textContent = '';
+                
+                adicionarMensagem(formatarDataBR(dataEscolhida), 'usuario');
+                
+                const balaoDigitando = simularDigitando();
+
+                timeoutDigitar = setTimeout(() => {
+                    balaoDigitando.remove();
+                    
+                    if (datasIndisponiveis.includes(dataEscolhida)) {
+                        const proximaDisponivel = encontrarProximaDataDisponivel(dataEscolhida);
+                        const dataFormatada = formatarDataBR(proximaDisponivel);
+                        
+                        adicionarMensagem(`Ops! Este dia já está alugado. Mas a boa notícia é que temos disponibilidade. Sugerimos a data de ${dataFormatada}.`, 'atendente');
+                        
+                        const botoesAcao = document.createElement('div');
+                        botoesAcao.classList.add('botoes-acao');
+                        const botaoSugerir = document.createElement('button');
+                        botaoSugerir.classList.add('botao-acao');
+                        botaoSugerir.textContent = 'Usar data sugerida';
+                        botaoSugerir.addEventListener('click', () => {
+                            validarData(proximaDisponivel);
+                        });
+                        botoesAcao.appendChild(botaoSugerir);
+                        
+                        const botaoOutraData = document.createElement('button');
+                        botaoOutraData.classList.add('botao-acao');
+                        botaoOutraData.textContent = 'Escolher outra data';
+                        botaoOutraData.addEventListener('click', () => {
+                            iniciarChatbot();
+                        });
+                        botoesAcao.appendChild(botaoOutraData);
+
+                        secaoEntrada.innerHTML = '';
+                        secaoEntrada.appendChild(botoesAcao);
+                        
+                    } else {
+                        dadosReserva.data = dataEscolhida;
+                        avancarParaEtapa2();
+                    }
+                }, 1500);
+            }
+            
+            // Avança para a Etapa 2 (nome e telefone)
+            function avancarParaEtapa2() {
+                adicionarMensagem('Ótimo! Data disponível. Agora, por favor, nos informe seu nome e telefone para contato. ', 'atendente');
+                
+                secaoEntrada.innerHTML = ''; // Limpa a entrada
+                estadoChatbot = 'contato';
+
+                const inputNome = document.createElement('input');
+                inputNome.type = 'text';
+                inputNome.placeholder = 'Seu nome completo';
+                inputNome.classList.add('campo-texto');
+                inputNome.required = true;
+                
+                const inputTelefone = document.createElement('input');
+                inputTelefone.type = 'tel';
+                inputTelefone.placeholder = '(99) 99999-9999';
+                inputTelefone.classList.add('campo-texto');
+                inputTelefone.required = true;
+                inputTelefone.maxLength = 15;
+                
+                const botaoEnviar = document.createElement('button');
+                botaoEnviar.classList.add('botao-primario');
+                botaoEnviar.textContent = 'Enviar';
+                botaoEnviar.style.width = '100%';
+                
+                const mensagemErro = document.createElement('p');
+                mensagemErro.classList.add('mensagem-estado');
+                
+                secaoEntrada.appendChild(inputNome);
+                secaoEntrada.appendChild(inputTelefone);
+                secaoEntrada.appendChild(botaoEnviar);
+                secaoEntrada.appendChild(mensagemErro);
+                
+                inputNome.focus();
+                
+                // Máscara de telefone
+                inputTelefone.addEventListener('input', (e) => {
+                    let value = e.target.value.replace(/\D/g, '');
+                    let maskedValue = '';
+                    if (value.length > 0) {
+                        maskedValue += `(${value.substring(0, 2)}`;
+                    }
+                    if (value.length > 2) {
+                        maskedValue += `) ${value.substring(2, 7)}`;
+                    }
+                    if (value.length > 7) {
+                        maskedValue += `-${value.substring(7, 11)}`;
+                    }
+                    e.target.value = maskedValue;
+                });
+                
+                botaoEnviar.addEventListener('click', () => {
+                    const nome = inputNome.value.trim();
+                    const telefone = inputTelefone.value.trim();
+                    if (!nome || telefone.length < 14) { // 14 é o comprimento mínimo da máscara (XX) XXXXX-XXXX
+                        mensagemErro.textContent = 'Por favor, preencha todos os campos corretamente.';
+                        return;
+                    }
+                    
+                    dadosReserva.nome = nome;
+                    dadosReserva.telefone = telefone;
+                    
+                    adicionarMensagem(`Nome: ${nome}, Telefone: ${telefone}`, 'usuario');
+                    avancarParaEtapa3();
+                });
+            }
+            
+            // Avança para a Etapa 3 (resumo e confirmação)
+            function avancarParaEtapa3() {
+                clearTimeout(timeoutDigitar);
+                estadoChatbot = 'resumo';
+                secaoEntrada.innerHTML = '';
+
+                const dataFormatada = formatarDataBR(dadosReserva.data);
+                
+                const mensagemResumo = `Sua pré-reserva está pronta!
+                <br><b>Data:</b> ${dataFormatada}
+                <br><b>Nome:</b> ${dadosReserva.nome}
+                <br><b>Telefone:</b> ${dadosReserva.telefone}`;
+                
+                const balaoDigitando = simularDigitando();
+
+                timeoutDigitar = setTimeout(() => {
+                    balaoDigitando.remove();
+                    adicionarMensagem('Perfeito! Aqui está o resumo da sua pré-reserva. Confirme para prosseguirmos.', 'atendente');
+                    adicionarMensagem(mensagemResumo, 'atendente');
+                    
+                    const botoesAcao = document.createElement('div');
+                    botoesAcao.classList.add('botoes-acao');
+                    
+                    const botaoConfirmar = document.createElement('button');
+                    botaoConfirmar.classList.add('botao-acao');
+                    botaoConfirmar.textContent = 'Confirmar pré-reserva';
+                    botaoConfirmar.addEventListener('click', finalizarReserva);
+                    
+                    const botaoEditar = document.createElement('button');
+                    botaoEditar.classList.add('botao-acao');
+                    botaoEditar.textContent = 'Editar';
+                    botaoEditar.addEventListener('click', () => {
+                        iniciarChatbot(); // Volta para o início para editar
+                    });
+                    
+                    botoesAcao.appendChild(botaoConfirmar);
+                    botoesAcao.appendChild(botaoEditar);
+                    secaoEntrada.appendChild(botoesAcao);
+                }, 1500);
+            }
+            
+            // Finaliza a reserva, simula salvamento e exibe toast
+            function finalizarReserva() {
+                dadosReserva.status = 'pre-reservado';
+                const reservas = JSON.parse(localStorage.getItem('reservasChacara')) || [];
+                reservas.push(dadosReserva);
+                localStorage.setItem('reservasChacara', JSON.stringify(reservas));
+                
+                clearTimeout(timeoutDigitar);
+                
+                adicionarMensagem('Sua pré-reserva foi registrada com sucesso! Entraremos em contato em breve para confirmar os detalhes. Obrigado!', 'atendente');
+                
+                secaoEntrada.innerHTML = '';
+                
+                setTimeout(() => {
+                    janelaChatbot.classList.remove('ativo');
+                    mostrarToast('Sua pré-reserva foi registrada! Entraremos em contato.', 'sucesso');
+                }, 3000);
+            }
+            
+            // ========================================
+            // EVENTOS E OUVIDORES
+            // ========================================
+
+            // Abertura do modal do chatbot
+            botoesReservar.forEach(botao => {
+                botao.addEventListener('click', () => {
+                    janelaChatbot.classList.add('ativo');
+                    iniciarChatbot();
+                });
+            });
+
+            // Fechamento do modal do chatbot
+            botaoFecharChatbot.addEventListener('click', () => {
+                janelaChatbot.classList.remove('ativo');
+                clearTimeout(timeoutDigitar);
+            });
+            
+            // Fechamento do modal com tecla ESC
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && janelaChatbot.classList.contains('ativo')) {
+                    janelaChatbot.classList.remove('ativo');
+                    clearTimeout(timeoutDigitar);
+                }
+            });
+
+            // Fechamento do modal clicando fora
+            janelaChatbot.addEventListener('click', (e) => {
+                if (e.target === janelaChatbot) {
+                    janelaChatbot.classList.remove('ativo');
+                    clearTimeout(timeoutDigitar);
+                }
+            });
+
+            // Menu de hambúrguer para mobile
+            menuHamburguer.addEventListener('click', () => {
+                menuNavegacao.classList.toggle('ativo');
+            });
+            
+            // Fecha o menu hamburguer ao clicar em um link
+            document.querySelectorAll('.menu-navegacao a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if(menuNavegacao.classList.contains('ativo')) {
+                        menuNavegacao.classList.remove('ativo');
+                    }
+                });
+            });
+
+        });
+    </script>
 </body>
 </html>
+
+
+
+
