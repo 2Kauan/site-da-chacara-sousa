@@ -216,7 +216,10 @@ SEÇÕES
     transform: translateY(-5px);
 }
 
-.cartao-comodidade svg {
+.cartao-comodidade img {
+    position: relative;
+    top: 10px;
+    left: 20px;
     width: 48px;
     height: 48px;
     fill: var(--cor-primaria);
@@ -327,6 +330,14 @@ RODAPÉ
 
 .rodape-links a:hover, .rodape-links a:focus {
     color: var(--cor-primaria);
+}
+
+.kauan-creditos {
+    font-size: 0.9em;
+    color: #4b60ff;
+}
+.kauan-creditos:hover {
+    color: #6f65ff;
 }
 
 /*
