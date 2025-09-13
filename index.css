@@ -203,6 +203,7 @@ SEÇÕES
     gap: 24px;
 }
 
+
 .cartao-comodidade {
     background-color: #fff;
     padding: 24px;
@@ -212,18 +213,65 @@ SEÇÕES
     transition: transform var(--transicao-suave);
 }
 
+
+.cartao-comodidade>h3 {
+    color: var(--cor-terciaria);
+}
+
+
+
 .cartao-comodidade:hover, .cartao-comodidade:focus-within {
     transform: translateY(-5px);
 }
 
-.cartao-comodidade img {
+.cartao-comodidade>.imagem-piscina{
     position: relative;
-    top: 10px;
-    left: 20px;
-    width: 48px;
-    height: 48px;
-    fill: var(--cor-primaria);
-    margin-bottom: 16px;
+    top: 27px;   
+    height: 120px;
+    width: 120px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+.cartao-comodidade>.imagem-gourmet{
+    position: relative;
+    top: 27px;   
+    height: 140px;
+    width: 140px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+.cartao-comodidade>.imagem-banheiro{
+    position: relative;
+    top: 47px; 
+    height: 70px;
+    width: 70px;
+    margin-bottom: 49px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+.cartao-comodidade>.imagem-festas{
+    position: relative;
+    top: 27px;   
+    height: 120px;
+    width: 120px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+.cartao-comodidade>.imagem-estacionamento{
+    position: relative;
+    top: 27px;   
+    height: 120px;
+    width: 120px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
 }
 
 .precos .tabela-precos {
@@ -249,6 +297,10 @@ SEÇÕES
 
 .precos .tabela-precos tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+.container p{
+    text-align: center;
 }
 
 .localizacao .mapa-embed {
