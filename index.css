@@ -273,7 +273,10 @@ SEÇÕES
     margin-top: -19px;
     color: var(--cor-primaria);
 }
-
+.contato-zap{
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
 .precos .tabela-precos {
     width: 100%;
     border-collapse: collapse;
@@ -382,6 +385,18 @@ RODAPÉ
 
 .rodape-links a:hover, .rodape-links a:focus {
     color: var(--cor-primaria);
+}
+
+.instagram{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+.zap{
+    position: relative;
+    top: 10px;
+    width: 60px;
+    height: 60px;
 }
 
 .kauan-creditos {
