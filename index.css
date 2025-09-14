@@ -149,7 +149,7 @@ SEÇÕES
 */
 
 .secao-hero {
-    height: 100vh;
+height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,6 +273,70 @@ SEÇÕES
     margin-top: -19px;
     color: var(--cor-primaria);
 }
+
+.cartao-comodidade>.imagem-freezer{
+    position: relative;
+    top: 27px;   
+    height: 120px;
+    width: 120px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+
+.cartao-comodidade>.imagem-acessibilidade{
+    position: relative;
+    top: 27px;   
+    height: 110px;
+    width: 110px;
+    margin-bottom: 26px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+
+
+.cartao-comodidade>.imagem-geladeira{
+    position: relative;
+    top: 27px;   
+    height: 150px;
+    width: 150px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+.cartao-comodidade>.imagem-cadeiras{
+    position: relative;
+    top: 27px;   
+    height: 120px;
+    width: 120px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+.cartao-comodidade>.imagem-wifi{
+    position: relative;
+    top: 27px;   
+    height: 120px;
+    width: 120px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
+.cartao-comodidade>.imagem-parquinho{
+    position: relative;
+    top: 27px;   
+    height: 120px;
+    width: 120px;
+    margin-bottom: 19px;
+    margin-top: -19px;
+    color: var(--cor-primaria);
+}
+
 .contato-zap{
     color: var(--cor-primaria);
     font-weight: bold;
