@@ -690,24 +690,33 @@ ANIMAÇÕES E MEDIA QUERIES
     50% { transform: scale(1.05); opacity: 1; }
     100% { transform: scale(1); opacity: 0.8; }
 }
-
 @media (max-width: 768px) {
+
+    /* garante que a largura seja correta */
+    html, body {
+        width: 100%;
+        overflow-x: hidden; /* evita rolagem lateral */
+    }
+
     .cabecalho-conteudo {
         flex-wrap: wrap;
         justify-content: center;
+        padding: 10px; /* diminui o espaço interno */
     }
+
     .logo {
         width: 100%;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
+
     .menu-navegacao {
         display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
-        gap: 10px;
-        padding-bottom: 16px;
+        gap: 8px;
+        padding-bottom: 12px;
     }
     
     .menu-navegacao.ativo {
@@ -717,15 +726,24 @@ ANIMAÇÕES E MEDIA QUERIES
     .botao-menu-hamburguer {
         display: block;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 10px;
+        right: 4px;
     }
 
+   
     .secao-hero {
-        padding-top: 150px;
+        padding-top: 80px; 
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    
-    .conteudo-chatbot {
-        height: 90%;
+
+    .secao-hero h1 {
+        font-size: 1.8rem; 
+        line-height: 1.2;
     }
+
+    .secao-hero p {
+        font-size: 1rem; 
+    }
+
 }
