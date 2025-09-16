@@ -7,6 +7,11 @@
     <meta name="description" content="Chácara Sousa é o lugar perfeito para lazer, eventos e contato com a natureza. Reserve sua data e venha desfrutar!">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="imagens/logo-chacara.png" type="image/x-icon">
+    
+    <!--AOS -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -34,9 +39,9 @@
     </header>
 
     <main>
-        <section id="hero" class="secao-hero">
-            <div class="container">
-                <h1>Chácara Sousa</h1>
+        <section id="hero" class="secao-hero" >
+            <div class="container" data-aos="fade-up">
+                <h1 >Chácara Sousa</h1>
                 <p>O seu refúgio de tranquilidade e natureza para eventos, lazer e momentos inesquecíveis. Perfeito para festas de aniversário, churrascos em família ou um simples fim de semana de relaxamento.</p>
               
                 <a href="https://wa.me/5513981213852?text=Ol%C3%A1%2C%20queria%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20funciona%20o%20aluguel%20da%20Ch%C3%A1cara%20Sousa." target="_blank">
@@ -48,33 +53,34 @@
             </div>
         </section>
 
-        <section id="sobre" class="secao-sobre">
-            <div class="container">
-                <h2 class="secao-titulo">Sobre a Chácara Sousa</h2>
-                <p>Bem-vindo à Chácara Sousa, um lugar de paz e beleza natural. Nosso espaço foi projetado para ser o cenário perfeito para seus melhores momentos, seja um evento especial ou um simples final de semana de descanso com a família. Rodeada por uma vasta área, a chácara oferece a combinação ideal de conforto e contato com a natureza.</p>
-                <p>Nossa missão é proporcionar uma experiência memorável, garantindo que cada detalhe contribua para a sua felicidade e bem-estar. Estamos prontos para recebê-lo e ajudá-lo a criar lembranças que durarão a vida toda.</p>
+        <section id="sobre" class="secao-sobre" >
+            <div class="container" >
+                <h2 class="secao-titulo" data-aos="fade-right">Sobre a Chácara Sousa</h2>
+                <p data-aos="fade-left">Bem-vindo à Chácara Sousa, um lugar de paz e beleza natural. Nosso espaço foi projetado para ser o cenário perfeito para seus melhores momentos, seja um evento especial ou um simples final de semana de descanso com a família. Rodeada por uma vasta área, a chácara oferece a combinação ideal de conforto e contato com a natureza.</p>
+                <p data-aos="fade-left">Nossa missão é proporcionar uma experiência memorável, garantindo que cada detalhe contribua para a sua felicidade e bem-estar. Estamos prontos para recebê-lo e ajudá-lo a criar lembranças que durarão a vida toda.</p>
             </div>
         </section>
 
         <section id="galeria" class="galeria">
             <div class="container">
-                <h2 class="secao-titulo">Nossa Galeria</h2>
-                <div class="grade-imagens">
+                <h2 class="secao-titulo" data-aos="fade-right">Nossa Galeria</h2>
+                <div class="grade-imagens" >
 
-                    <img src="imagens/caminho.jpg" alt="Imagem 1 da chácara, piscina">
+                    <img src="imagens/caminho.jpg" alt="Imagem 1 da chácara, piscina" data-aos="zoom-in" data-aos-duration="1000">
 
-                    <img src="imagens/escada.jpg" alt="Imagem 2 da chácara">
+                    <img src="imagens/escada.jpg" alt="Imagem 2 da chácara" data-aos="zoom-in" data-aos-duration="1000">
 
-                    <img src="imagens/ninho.jpg" alt="Imagem 3 da chácara, ninho para descansar">
+                    <img src="imagens/ninho.jpg" alt="Imagem 3 da chácara, ninho para descansar" data-aos="zoom-in" data-aos-duration="1000">
 
-                    <img src="imagens/rede.jpg" alt="Imagem 4 da chácara, rede" >
-                    <img src="imagens/piscina.jpg" alt="Imagem 5 da chácara, área de lazer">
+                    <img src="imagens/rede.jpg" alt="Imagem 4 da chácara, rede"  data-aos="zoom-in" data-aos-duration="1000">
 
-                    <img src="imagens/cadeira.jpg" alt="Imagem 6 da chácara">
+                    <img src="imagens/piscina.jpg" alt="Imagem 5 da chácara, área de lazer" data-aos="zoom-in" data-aos-duration="1000">
 
-                    <img src="imagens/banco2.jpg" alt="Imagem 7 da chácara">
+                    <img src="imagens/cadeira.jpg" alt="Imagem 6 da chácara" data-aos="zoom-in" data-aos-duration="1000">
 
-                    <img src="imagens/geladeira.jpg" alt="Imagem 8 da chácara">
+                    <img src="imagens/banco2.jpg" alt="Imagem 7 da chácara" data-aos="zoom-in" data-aos-duration="1000">
+
+                    <img src="imagens/geladeira.jpg" alt="Imagem 8 da chácara" data-aos="zoom-in"  data-aos-duration="1000">
 
 
 
@@ -85,61 +91,62 @@
         <section id="comodidades" class="comodidades">
             <div class="container">
 
-                <h2 class="secao-titulo">O que temos?</h2>
+                <h2 class="secao-titulo" >O que temos?</h2>
 
                 <div class="grade-comodidades">
                     
-                    <div class="cartao-comodidade">
-                       <img class="imagem-piscina" src="imagens/piscina.png" alt="">
+                    <div class="cartao-comodidade" data-aos="zoom-in-up">
+                       <img class="imagem-piscina" src="imagens/piscina.png" alt="piscina">
+
                         <h3>Piscina</h3>
                         <p>Desfrute de uma piscina refrescante, ideal para momentos de lazer e diversão com seus convidados, em um ambiente cercado por natureza e tranquilidade.</p>
                     </div>
 
-                    <div class="cartao-comodidade">
+                    <div class="cartao-comodidade" data-aos="zoom-in-up">
                        <img class="imagem-gourmet" src="imagens/churrascaria-icone.png" alt="">
                         <h3>Churrasqueira</h3>
                         <p> Oferecemos uma churrasqueira, além de um fogão para que você possa preparar deliciosas refeições com seus amigos e familiares.</p>
                     </div>
                     
-                    <div class="cartao-comodidade">
+                    <div class="cartao-comodidade" data-aos="zoom-in-up">
                         <img class="imagem-banheiro" src="imagens/banheiro.png" alt="Banheiro">
 
                         <h3>Banheiros</h3>
                         <p>Disponibilizamos banheiros masculino e feminino, para garantir o conforto e acessibilidade a todos os nossos visitantes.</p>
                     </div>
 
-                    <div class="cartao-comodidade" >
+                    <div class="cartao-comodidade" data-aos="zoom-in-up" >
                        <img class="imagem-estacionamento" src="imagens/estacionamento-icone.png" alt="estacionamento">
                         <h3>Estacionamento</h3>
                         <p>Amplo espaço para estacionar seus veículos com segurança.</p>
                     </div>
 
-                    <div class="cartao-comodidade">
+                    <div class="cartao-comodidade" data-aos="zoom-in-up">
                         <img class="imagem-festas" src="imagens/area-de-festas.png" alt="Área de festas">
                         <h3>Área de Festas</h3>
                         <p>Espaço aberto e amplo, ideal para festas, eventos e confraternizações. Conta com infraestrutura para acomodar todos os seus convidados com conforto.</p>
                     </div>
 
-                     <div class="cartao-comodidade">
+                     <div class="cartao-comodidade" data-aos="zoom-in-up">
                         <img class="imagem-cadeiras" src="imagens/cadeiras.png" alt="Cadeiras e mesas">
                         <h3>Cadeiras e mesas</h3>
                         <p>Oferecemos 5 jogos completos de cadeiras e mesas para garantir o conforto de seus convidados durante o evento.</p>
                     </div>
 
-                     <div class="cartao-comodidade">
+                     <div class="cartao-comodidade" data-aos="zoom-in-up">
                         <img class="imagem-wifi" src="imagens/wifi.png" alt=" wifi ">
                         <h3> WI-FI </h3>
                         <p>Oferecemos conexão Wi-Fi gratuita para que você possa ficar sempre conectado durante sua estadia.</p>
                     </div>
 
-                     <div class="cartao-comodidade">
+                     <div class="cartao-comodidade" data-aos="zoom-in-up">
                         <img class="imagem-parquinho" src="imagens/parquinho.png" alt=" Parquinho ">
                         <h3> Parquinho </h3>
                         <p> Um espaço dedicado para o lazer das crianças, com brinquedos e área segura para diversão.</p>
                     </div>
 
 
-                    <div class="cartao-comodidade">
+                    <div class="cartao-comodidade" data-aos="zoom-in-up">
                     <img class="imagem-freezer" src="imagens/freezer.png" alt="Ícone de freezer">
                     <h3>Freezer</h3>
                     <p>Espaço com freezer disponível para manter suas bebidas e alimentos sempre gelados durante o evento.</p>
@@ -147,13 +154,13 @@
 
 
 
-                    <div class="cartao-comodidade">
-                    <img class="imagem-acessibilidade" src="imagens/acessibilidade.png" alt="Ícone de acessibilidade">
+                    <div class="cartao-comodidade" data-aos="zoom-in-up">
+                    <img class="imagem-acessibilidade"  src="imagens/acessibilidade.png" alt="Ícone de acessibilidade">
                     <h3>Acessibilidade</h3>
                     <p>Disponibilizamos uma rampa de acesso para cadeirantes e pessoas com mobilidade reduzida, garantindo inclusão e conforto para todos os visitantes.</p>
                     </div>
 
-                    <div class="cartao-comodidade">
+                    <div class="cartao-comodidade" data-aos="zoom-in-up">
                     <img class="imagem-geladeira" src="imagens/geladeira.png" alt="Ícone de acessibilidade">
                     <h3>Geladeira</h3>
                     <p>Geladeira perfeita para manter suas bebidas e alimentos frescos durante todo o evento, garantindo conforto e praticidade para seus convidados. </p>
@@ -168,9 +175,10 @@
 
         <section id="localizacao" class="localizacao">
             <div class="container localizacao-conteudo">
-                <h2 class="secao-titulo">Onde Estamos?</h2>
-                <p>Localizada em uma área de fácil acesso, a Chácara Sousa oferece a tranquilidade do campo sem a distância da cidade. Venha nos visitar!</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6631.562918984119!2d-41.160469427227184!3d-7.362730499999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79e8518c4b4d43f%3A0x6da013541e54fe88!2sCh%C3%A1cara%20sousa!5e0!3m2!1spt-BR!2sbr!4v1756763031707!5m2!1spt-BR!2sbr"
+                <h2 class="secao-titulo"   data-aos="zoom-in-up">Onde Estamos?</h2>
+                <p data-aos="zoom-in-up" >Localizada em uma área de fácil acesso, a Chácara Sousa oferece a tranquilidade do campo sem a distância da cidade. Venha nos visitar!</p>
+
+                <iframe data-aos="zoom-in-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6631.562918984119!2d-41.160469427227184!3d-7.362730499999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79e8518c4b4d43f%3A0x6da013541e54fe88!2sCh%C3%A1cara%20sousa!5e0!3m2!1spt-BR!2sbr!4v1756763031707!5m2!1spt-BR!2sbr"
                     width="500" 
                     height="450"
                     style="border:10px; width: 100%; height: 450px;"
@@ -182,21 +190,26 @@
             </div>
         </section>
 
-    <footer class="rodape">
+    <footer class="rodape" >
         <div class="container">
-            <div class="rodape-links">
+            <div class="rodape-links" data-aos="zoom-out">
                 <a href="https://www.instagram.com/chacarasousa_eventos?igsh=Z3dwbG1kbDN2NGl0" target="_blank"><img class="instagram" src="imagens/instagram-icone.png" alt="Instagram"></a>
 
                 <a href="https://wa.me/5513981213852?text=Ol%C3%A1%2C%20queria%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20como%20funciona%20o%20aluguel%20da%20Ch%C3%A1cara%20Sousa." target="_blank"><img class="zap" src="imagens/whatsapp-icone.png" alt="whatsapp"> </a>
             </div>
 
-             <p> Desenvolvido por <a class="kauan-creditos" href="https://www.instagram.com/kauan_zxw?igsh=Z3dwbG1kbDN2NGl0" target="_blank" > Kauan Batista de Sousa</a></p>
+             <p data-aos="zoom-out"> Desenvolvido por <a class="kauan-creditos" href="https://www.instagram.com/kauan_zxw?igsh=Z3dwbG1kbDN2NGl0" target="_blank" > Kauan Batista de Sousa</a></p>
             <p>&copy; 2025 Chácara Sousa. Todos os direitos reservados.</p>
            
         </div>
     </footer>
     
     <script src="index.js"> </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
 
